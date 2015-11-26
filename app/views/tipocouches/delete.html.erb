@@ -1,0 +1,38 @@
+<div class="container-fluid">
+	<div class="row">
+    <div class="col-lg-10">
+
+	<div class="jumbotron"> 
+		
+
+		<label for=“name"><font face="arial" size="5" color="green"> Seleccione un couch para dar de baja </font> </label>
+ 		<p  
+
+
+		/p>
+
+		<select name="couch">
+			<option> <h1>  </h> </option>
+			<% @tipocouch.each do |tipo| %>
+				<option> <h1> <%= tipo.name %> </h> </option>
+			<% end %>
+		</select>
+ 
+		
+		<p  
+
+
+		/p>
+ 
+
+		<p>
+			<a class="btn btn-primary btn-lg" href="#" role=“button" > Eliminar </a>
+
+			<p> <%= link_to "Volver", href="/welcome/index" %> </p>
+
+		</p> 
+
+
+	</div>
+	
+</div> 
